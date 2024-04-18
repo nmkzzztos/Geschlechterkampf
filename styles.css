@@ -1,0 +1,189 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #278cf8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.game-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    height: 80%;
+    width: 80%;
+    max-width: 1500px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #007BFF;
+    padding: 20px;
+}
+
+.team {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+}
+
+h1, h2 {
+    color: #000000;
+}
+
+img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin: 10px 0;
+}
+
+.score {
+    font-size: 36px;
+    color: #4CAF50;
+}
+
+.questions {
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-align: center;
+    width: 60%;
+}
+
+.question {
+    background-color: #b100a5;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    width: 30%;
+}
+
+.question:hover {
+    background-color: #0056b3;
+}
+
+#select-question {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #2c3e50;
+}
+
+#turnIndicator {
+    font-size: 24px;
+    color: #2c3e50;
+}
+
+.questions-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.categories {
+    display: flex;
+    align-items: center;
+}
+
+.category {
+    padding: 10px;
+    margin: 10px;
+    width: 70%; /* Задаём ширину категории */
+}
+
+h3 {
+    color: #333;
+    margin-top: 0;
+}
+
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed; /* Фиксированное позиционирование */
+    z-index: 1; /* Поверх всего остального */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    overflow: auto; /* Прокрутка, если нужно */
+    background-color: rgb(0,0,0); /* Фон с непрозрачностью */
+    background-color: rgba(0,0,0,0.4); /* Черный фон с непрозрачностью */
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% от верха и центрирование по горизонтали */
+    border-radius: 30px;
+    padding: 20px;
+    width: 30%; /* Ширина контента */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.bttns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.modal-btn {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#correctAnswer {
+    background-color: #4CAF50; /* Зеленый */
+    color: white;
+}
+
+#correctAnswer:hover {
+    background-color: #46a049;
+}
+
+#wrongAnswer {
+    background-color: #f44336; /* Красный */
+    color: white;
+}
+
+#wrongAnswer:hover {
+    background-color: #da190b;
+}
+
+button.disabled, button:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}

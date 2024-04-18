@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geschlechterkampf</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="team" id="boys">
+            <h2>Jungen</h2>
+            <img src="boys_team.jpg" alt="Boys Team">
+            <div class="score" id="boys_score">0</div>
+        </div>
+        <div class="questions">
+            <div id="turnIndicator"></div>
+            <h1 id="select-question">Wähle eine Frage:</h1>
+            <div class="categories">
+                <div class="category" id="category1">
+                    <h3>Kategorie 1</h3>
+                    <div class="questions-list"></div>
+                </div>
+                <div class="category" id="category2">
+                    <h3>Kategorie 2</h3>
+                    <div class="questions-list"></div>
+                </div>
+            </div>
+        </div>
+        <div class="team" id="girls">
+            <h2>Mädchen</h2>
+            <img src="girls_team.jpg" alt="Girls Team">
+            <div class="score" id="girls_score">0</div>
+        </div>
+    </div>
+    <div id="questionModal" class="modal">
+        <div class="modal-content">
+            <h2 id="questionText"></h2>
+            <h3 id="points"></h3>
+            <div class="bttns">
+                <button id="wrongAnswer" class="modal-btn">Falsch (✕)</button>
+                <button id="correctAnswer" class="modal-btn">Richtig (✓)</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
