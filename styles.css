@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #278cf8;
+    background-color: #fbfb8c;
     margin: 0;
     padding: 0;
     display: flex;
@@ -17,17 +17,19 @@ body {
     width: 80%;
     max-width: 1500px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    background-color: #007BFF;
+    background-color: #ffffaf;
     padding: 20px;
 }
 
 .team {
     flex: 1;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 60%;
+    top: 100px
 }
 
 h1, h2 {
@@ -35,15 +37,15 @@ h1, h2 {
 }
 
 img {
-    width: 100px;
+    width: 150px;
     height: auto;
     border-radius: 50%;
     margin: 10px 0;
 }
 
 .score {
-    font-size: 36px;
-    color: #4CAF50;
+    font-size: 48px;
+    color: #d46a07;
 }
 
 .questions {
@@ -58,7 +60,7 @@ img {
 }
 
 .question {
-    background-color: #b100a5;
+    background-color: #d46a07;
     color: white;
     padding: 10px 20px;
     margin: 10px;
@@ -67,11 +69,17 @@ img {
     cursor: pointer;
     transition: background-color 0.3s;
     text-align: center;
-    width: 30%;
+    width: 100px;
+    height: 50px;
+
+    transition: all 0.3s ease;
 }
 
 .question:hover {
-    background-color: #0056b3;
+    background-color: #ff8f27;
+
+    transform: translate(-8px, -8px);
+    box-shadow: 8px 8px #000000;
 }
 
 #select-question {
@@ -131,21 +139,7 @@ h3 {
     margin: 15% auto; /* 15% от верха и центрирование по горизонтали */
     border-radius: 30px;
     padding: 20px;
-    width: 30%; /* Ширина контента */
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+    width: 50%; /* Ширина контента */
 }
 
 .bttns {
@@ -162,24 +156,40 @@ h3 {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.modal-btn:hover {
+    transform: translate(-8px, -8px);
+    box-shadow: 8px 8px #000000;
 }
 
 #correctAnswer {
-    background-color: #4CAF50; /* Зеленый */
+    background-color: #46a049; /* Зеленый */
     color: white;
 }
 
 #correctAnswer:hover {
-    background-color: #46a049;
+    background-color: #4CAF50;
 }
 
 #wrongAnswer {
-    background-color: #f44336; /* Красный */
+    background-color: #da190b;
     color: white;
 }
 
 #wrongAnswer:hover {
-    background-color: #da190b;
+    background-color: #f44336;
+}
+
+#halfCorrectAnswer {
+    background-color: #f0ad4e;
+    color: white;
+}
+
+#halfCorrectAnswer:hover {
+    background-color: #ec971f;
 }
 
 button.disabled, button:disabled {

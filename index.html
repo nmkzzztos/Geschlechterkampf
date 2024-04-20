@@ -9,27 +9,30 @@
 <body>
     <div class="game-container">
         <div class="team" id="boys">
-            <h2>Jungen</h2>
-            <img src="boys_team.jpg" alt="Boys Team">
+            <h2>S&T</h2>
+            <img src="boys_team.png" alt="Boys Team">
             <div class="score" id="boys_score">0</div>
         </div>
         <div class="questions">
-            <div id="turnIndicator"></div>
-            <h1 id="select-question">Wähle eine Frage:</h1>
+            <h1 id="select-question"><div id="turnIndicator"></div></h1>
             <div class="categories">
                 <div class="category" id="category1">
-                    <h3>Kategorie 1</h3>
+                    <h3>Peinliche Geschichten</h3>
                     <div class="questions-list"></div>
                 </div>
                 <div class="category" id="category2">
-                    <h3>Kategorie 2</h3>
+                    <h3>Erste Male</h3>
+                    <div class="questions-list"></div>
+                </div>
+                <div class="category" id="category3">
+                    <h3>Persönliche Vorlieben</h3>
                     <div class="questions-list"></div>
                 </div>
             </div>
         </div>
         <div class="team" id="girls">
-            <h2>Mädchen</h2>
-            <img src="girls_team.jpg" alt="Girls Team">
+            <h2>T&A</h2>
+            <img src="girls_team.png" alt="Girls Team">
             <div class="score" id="girls_score">0</div>
         </div>
     </div>
@@ -39,6 +42,7 @@
             <h3 id="points"></h3>
             <div class="bttns">
                 <button id="wrongAnswer" class="modal-btn">Falsch (✕)</button>
+                <button id="halfCorrectAnswer" class="modal-btn">(½)</button>
                 <button id="correctAnswer" class="modal-btn">Richtig (✓)</button>
             </div>
         </div>
